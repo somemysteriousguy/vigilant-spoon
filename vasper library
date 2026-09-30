@@ -211,7 +211,7 @@ pcall(chilliSetProperty, objects.obj4, "Archivable", true)
 pcall(chilliSetProperty, objects.obj4, "Visible", true)
 pcall(chilliSetProperty, objects.obj4, "Active", false)
 pcall(chilliSetProperty, objects.obj4, "AnchorPoint", Vector2.new(0.5,0))
-pcall(chilliSetProperty, objects.obj4, "BackgroundColor3", Color3.fromRGB(55,55,55))
+pcall(chilliSetProperty, objects.obj4, "BackgroundColor3", Color3.fromRGB(25,25,25))
 pcall(chilliSetProperty, objects.obj4, "BackgroundTransparency", 0)
 pcall(chilliSetProperty, objects.obj4, "BorderColor3", Color3.fromRGB(0,0,0))
 pcall(chilliSetProperty, objects.obj4, "BorderSizePixel", 0)
@@ -231,7 +231,7 @@ objects.obj5 = Instance.new("UIStroke")
 pcall(chilliSetProperty, objects.obj5, "Name", "UIStroke")
 pcall(chilliSetProperty, objects.obj5, "Archivable", true)
 pcall(chilliSetProperty, objects.obj5, "ApplyStrokeMode", Enum.ApplyStrokeMode.Border)
-pcall(chilliSetProperty, objects.obj5, "Color", Color3.fromRGB(35,35,35))
+pcall(chilliSetProperty, objects.obj5, "Color", Color3.fromRGB(58,0,0))
 pcall(chilliSetProperty, objects.obj5, "Enabled", true)
 pcall(chilliSetProperty, objects.obj5, "LineJoinMode", Enum.LineJoinMode.Round)
 pcall(chilliSetProperty, objects.obj5, "Thickness", 0.05999999865889549)
@@ -362,7 +362,7 @@ objects.obj10.Parent = objects.obj9
 objects.obj11 = Instance.new("UIGradient")
 pcall(chilliSetProperty, objects.obj11, "Name", "UIGradient")
 pcall(chilliSetProperty, objects.obj11, "Archivable", true)
-pcall(chilliSetProperty, objects.obj11, "Color", ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(105,105,105)),ColorSequenceKeypoint.new(1,Color3.fromRGB(55,55,55))}))
+pcall(chilliSetProperty, objects.obj11, "Color", ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(110,110,110)),ColorSequenceKeypoint.new(1,Color3.fromRGB(63,63,63))}))
 pcall(chilliSetProperty, objects.obj11, "Enabled", true)
 pcall(chilliSetProperty, objects.obj11, "Offset", Vector2.new(0,0))
 pcall(chilliSetProperty, objects.obj11, "Rotation", 90)
@@ -458,7 +458,7 @@ pcall(chilliSetProperty, objects.obj16, "Archivable", true)
 pcall(chilliSetProperty, objects.obj16, "Visible", true)
 pcall(chilliSetProperty, objects.obj16, "Active", false)
 pcall(chilliSetProperty, objects.obj16, "AnchorPoint", Vector2.new(0.5,0.5))
-pcall(chilliSetProperty, objects.obj16, "BackgroundColor3", Color3.fromRGB(45,45,45))
+pcall(chilliSetProperty, objects.obj16, "BackgroundColor3", Color3.fromRGB(27,27,27))
 pcall(chilliSetProperty, objects.obj16, "BackgroundTransparency", 0)
 pcall(chilliSetProperty, objects.obj16, "BorderColor3", Color3.fromRGB(0,0,0))
 pcall(chilliSetProperty, objects.obj16, "BorderSizePixel", 0)
@@ -598,7 +598,7 @@ objects.obj21.Parent = objects.obj20
 objects.obj22 = Instance.new("UIGradient")
 pcall(chilliSetProperty, objects.obj22, "Name", "UIGradient")
 pcall(chilliSetProperty, objects.obj22, "Archivable", true)
-pcall(chilliSetProperty, objects.obj22, "Color", ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(125,125,125)),ColorSequenceKeypoint.new(1,Color3.fromRGB(60,60,60))}))
+pcall(chilliSetProperty, objects.obj22, "Color", ColorSequence.new({ColorSequenceKeypoint.new(0,Color3.fromRGB(110,110,110)),ColorSequenceKeypoint.new(1,Color3.fromRGB(73,73,73))}))
 pcall(chilliSetProperty, objects.obj22, "Enabled", true)
 pcall(chilliSetProperty, objects.obj22, "Offset", Vector2.new(0,0))
 pcall(chilliSetProperty, objects.obj22, "Rotation", 90)
@@ -609,7 +609,7 @@ objects.obj23 = Instance.new("UIStroke")
 pcall(chilliSetProperty, objects.obj23, "Name", "UIStroke")
 pcall(chilliSetProperty, objects.obj23, "Archivable", true)
 pcall(chilliSetProperty, objects.obj23, "ApplyStrokeMode", Enum.ApplyStrokeMode.Border)
-pcall(chilliSetProperty, objects.obj23, "Color", Color3.fromRGB(30,30,30))
+pcall(chilliSetProperty, objects.obj23, "Color", Color3.fromRGB(76,0,0))
 pcall(chilliSetProperty, objects.obj23, "Enabled", true)
 pcall(chilliSetProperty, objects.obj23, "LineJoinMode", Enum.LineJoinMode.Round)
 pcall(chilliSetProperty, objects.obj23, "Thickness", 0.09000000357627869)
@@ -2592,14 +2592,14 @@ end
 
 local rebirthOuterGradient = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 193, 194)),
-    ColorSequenceKeypoint.new(0.0570934266, Color3.fromRGB(255, 132, 123)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(239, 28, 28)),
+    ColorSequenceKeypoint.new(0.0570934266, Color3.fromRGB(110,110,110)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(73,73,73)),
 })
 
 local rebirthInnerGradient = ColorSequence.new({
     ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 193, 194)),
-    ColorSequenceKeypoint.new(0.0155709349, Color3.fromRGB(255, 132, 123)),
-    ColorSequenceKeypoint.new(1, Color3.fromRGB(239, 28, 28)),
+    ColorSequenceKeypoint.new(0.0155709349, Color3.fromRGB(110,110,110)),
+    ColorSequenceKeypoint.new(1, Color3.fromRGB(73,73,73)),
 })
 
 local function addRedGradient(parent, name, color)
@@ -2649,7 +2649,7 @@ local function createRebirthStyleButton(parent, text, layoutOrder)
     base.Name = "Main"
     base.Active = false
     base.AnchorPoint = Vector2.new(0.5, 0.5)
-    base.BackgroundColor3 = Color3.fromRGB(175, 0, 0)
+    base.BackgroundColor3 = Color3.fromRGB(37,37,37)
     base.BorderSizePixel = 0
     base.Position = UDim2.fromScale(0.5, 0.5)
     base.Size = UDim2.fromScale(1, 0.92)
@@ -3265,7 +3265,7 @@ local function createDropdownRow(
         applyBase.Name = "Main"
         applyBase.Active = false
         applyBase.AnchorPoint = Vector2.new(0.5, 0.5)
-        applyBase.BackgroundColor3 = Color3.fromRGB(175, 0, 0)
+        applyBase.BackgroundColor3 = Color3.fromRGB(37,37,37)
         applyBase.BorderSizePixel = 0
         applyBase.Position = UDim2.fromScale(0.5, 0.5)
         applyBase.Size = UDim2.fromScale(1, 1)
@@ -3903,7 +3903,7 @@ local function createButtonRow(name, labelText, buttonText, confirmText)
     base.Name = "Main"
     base.Active = false
     base.AnchorPoint = Vector2.new(0.5, 0.5)
-    base.BackgroundColor3 = Color3.fromRGB(175, 0, 0)
+    base.BackgroundColor3 = Color3.fromRGB(37,37,37)
     base.BorderSizePixel = 0
     base.Position = UDim2.fromScale(0.5, 0.5)
     base.Size = UDim2.fromScale(1, 0.92)
@@ -11997,8 +11997,8 @@ local function setTabSelected(tab, selected)
             ),
             {
                 BackgroundColor3 = selected
-                        and Color3.fromRGB(255, 54, 54)
-                    or Color3.fromRGB(175, 0, 0),
+                        and Color3.fromRGB(97,97,97)
+                    or Color3.fromRGB(37,37,37),
             }
         ):Play()
     end

@@ -2590,19 +2590,19 @@ local function applyPlainTextStyle(label)
     configureScaledStroke(stroke, Color3.fromRGB(0, 0, 0), 0.07999999821186066)
 end
 
-local rebirthOuterGradient = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 193, 194)),
+local greyOuterGradient = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(115,115,115)),
     ColorSequenceKeypoint.new(0.0570934266, Color3.fromRGB(110,110,110)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(73,73,73)),
 })
 
-local rebirthInnerGradient = ColorSequence.new({
-    ColorSequenceKeypoint.new(0, Color3.fromRGB(255, 193, 194)),
+local greyInnerGradient = ColorSequence.new({
+    ColorSequenceKeypoint.new(0, Color3.fromRGB(115,115,115)),
     ColorSequenceKeypoint.new(0.0155709349, Color3.fromRGB(110,110,110)),
     ColorSequenceKeypoint.new(1, Color3.fromRGB(73,73,73)),
 })
 
-local function addRedGradient(parent, name, color)
+local function addGreyGradient(parent, name, color)
     local gradient = Instance.new("UIGradient")
     gradient.Name = name
     gradient.Color = color
@@ -2667,7 +2667,7 @@ local function createRebirthStyleButton(parent, text, layoutOrder)
     colorFrame.Size = UDim2.fromScale(1, 0.9)
     colorFrame.ZIndex = 1
     colorFrame.Parent = base
-    addRedGradient(colorFrame, "RedGradient", rebirthOuterGradient)
+    addGreyGradient(colorFrame, "GreyGradient", greyOuterGradient)
 
     local highlight = Instance.new("Frame")
     highlight.Name = "Transparent"
@@ -2679,7 +2679,7 @@ local function createRebirthStyleButton(parent, text, layoutOrder)
     highlight.Size = UDim2.fromScale(0.965, 0.88)
     highlight.ZIndex = 2
     highlight.Parent = colorFrame
-    addRedGradient(highlight, "RedGradient", rebirthInnerGradient)
+    addGreyGradient(highlight, "GreyGradient", greyInnerGradient)
 
     local label = Instance.new("TextLabel")
     label.Name = "Label"
@@ -3283,7 +3283,7 @@ local function createDropdownRow(
         applyColor.Size = UDim2.fromScale(1, 0.9)
         applyColor.ZIndex = 11
         applyColor.Parent = applyBase
-        addRedGradient(applyColor, "RedGradient", rebirthOuterGradient)
+        addGreyGradient(applyColor, "GreyGradient", greyOuterGradient)
 
         local applyHighlight = Instance.new("Frame")
         applyHighlight.Name = "Transparent"
@@ -3295,7 +3295,7 @@ local function createDropdownRow(
         applyHighlight.Size = UDim2.fromScale(0.965, 0.88)
         applyHighlight.ZIndex = 12
         applyHighlight.Parent = applyColor
-        addRedGradient(applyHighlight, "RedGradient", rebirthInnerGradient)
+        addGreyGradient(applyHighlight, "GreyGradient", greyInnerGradient)
 
         applyCaption = Instance.new("TextLabel")
         applyCaption.Name = "Label"
@@ -3921,7 +3921,7 @@ local function createButtonRow(name, labelText, buttonText, confirmText)
     colorFrame.Size = UDim2.fromScale(1, 0.9)
     colorFrame.ZIndex = 1
     colorFrame.Parent = base
-    addRedGradient(colorFrame, "RedGradient", rebirthOuterGradient)
+    addGreyGradient(colorFrame, "GreyGradient", greyOuterGradient)
 
     local highlight = Instance.new("Frame")
     highlight.Name = "Transparent"
@@ -3933,7 +3933,7 @@ local function createButtonRow(name, labelText, buttonText, confirmText)
     highlight.Size = UDim2.fromScale(0.965, 0.88)
     highlight.ZIndex = 2
     highlight.Parent = colorFrame
-    addRedGradient(highlight, "RedGradient", rebirthInnerGradient)
+    addGreyGradient(highlight, "GreyGradient", greyInnerGradient)
 
     local caption = Instance.new("TextLabel")
     caption.Name = "Label"
@@ -12433,8 +12433,8 @@ local B0 = {
     [23] = setLeftCenterHidden, [24] = RESIZE_KEEPS_OPTION_WIDTH,
     [25] = applyResizeSize, [26] = normalTextFont,
     [27] = italicTextFont, [28] = applyShinyTextStyle,
-    [29] = applyPlainTextStyle, [30] = rebirthOuterGradient,
-    [31] = addRedGradient, [32] = addScaledStroke,
+    [29] = applyPlainTextStyle, [30] = greyOuterGradient,
+    [31] = addGreyGradient, [32] = addScaledStroke,
     [33] = createRebirthStyleButton, [34] = ACCENT_GRADIENT,
     [35] = ROW_ASPECT, [36] = ROW_WIDTH_SCALE,
     [37] = CHEVRON_COLOR, [38] = UNIT_CHEVRON_COLOR,
